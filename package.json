@@ -9,7 +9,6 @@
     "hbs": "^4.1.1"
   },
   "scripts": {
-	"postinstall": "npm run build",
     "start": "node api.js"
   },
   "engines": {

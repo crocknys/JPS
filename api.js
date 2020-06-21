@@ -2,7 +2,7 @@ var express = require('express');
 var hbs = require('express-handlebars');
 const path = require('path');
 
-var hostname = 'localhost';
+var hostname = '127.0.0.1';
 var port = 3000;
 var app = express();
 var number = 0;
@@ -11,7 +11,7 @@ var isHidden = true;
 var router = express.Router();
 
 app.listen(port, hostname, function () {
-	console.log("Mon serveur fonctionne sur http://" + hostname + ":" + port);
+	console.log(`Server running at http://${hostname}:${port}/`);
 });
 
 app.set('views', path.join(__dirname, "views"))
